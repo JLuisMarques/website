@@ -11,14 +11,14 @@ const config = {
     v4: true,
   },
 
-  // 👇 Use your GitHub Pages URL
-  url: 'https://JLuisMarques.github.io',
-  // 👇 Must match your repo name
-  baseUrl: '/website/',
+  // ✅ Use your real domain here (custom domain)
+  url: 'https://docs.luismarques.com',
+  baseUrl: '/', // ✅ root since you’re using a custom domain
+  trailingSlash: true, // ✅ avoids GH Pages redirect quirks
 
   // GitHub pages deployment config.
-  organizationName: 'JLuisMarques', // Your GitHub username
-  projectName: 'website', // Your repo name
+  organizationName: 'JLuisMarques', // GitHub username
+  projectName: 'website',           // Repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
