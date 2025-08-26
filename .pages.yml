@@ -1,0 +1,40 @@
+# .pages.yml
+media:
+  # Docusaurus serves everything in /static at site root
+  input: static
+  output: /
+
+content:
+  # Blog posts in /blog
+  - name: blog
+    label: Blog posts
+    type: collection
+    path: blog
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"   # 2025-08-27-my-post.md
+    fields:
+      - { name: title,        label: Title,        type: string, required: true }
+      - { name: description,  label: Description,  type: text }
+      - { name: authors,      label: Authors,      type: string, list: true }
+      - { name: tags,         label: Tags,         type: string, list: true }
+      - { name: image,        label: Cover image,  type: image }
+      - { name: draft,        label: Draft,        type: boolean }
+      - { name: body,         label: Body,         type: rich-text }
+
+  # Docs in /docs (tree view, supports nested folders)
+  - name: docs
+    label: Docs
+    type: collection
+    path: docs
+    format: yaml-frontmatter
+    subfolders: true
+    view:
+      layout: tree
+      # treat index.md as the node file if you use folder-based docs
+      node:
+        filename: index.md
+    fields:
+      - { name: title,        label: Title,        type: string, required: true }
+      - { name: sidebar_label,label: Sidebar label,type: string }
+      - { name: slug,         label: Slug,         type: string }
+      - { name: body,         label: Body,         type: rich-text }
