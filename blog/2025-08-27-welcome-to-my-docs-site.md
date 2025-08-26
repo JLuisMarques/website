@@ -6,7 +6,7 @@ authors:
   - Luis Marques
 tags:
   - setup, docusaurus, pagescms
-draft: false
+draft: true
 ---
 \# Welcome 🎉
 
