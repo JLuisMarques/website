@@ -24,10 +24,13 @@ slorber:
     newsletter: "https://thisweekinreact.com"
 
 luismarques:
-  name: "Luis Marques"
-  title: "Creator of this site"
-  url: "https://github.com/JLuisMarques"
-  image_url: "https://github.com/JLuisMarques.png"
+  name: Luis Marques
+  title: Creator of this site
+  url: https://github.com/JLuisMarques
+  image_url: https://github.com/JLuisMarques.png
   page: true
   socials:
-    github: "JLuisMarques"
+    github: JLuisMarques
+  aliases:
+    - "Luis Marques"
+
