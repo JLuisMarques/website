@@ -1,36 +1,21 @@
 import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import BlogPostItem from '@theme/BlogPostItem';
+import {useBlogPosts} from '@docusaurus/theme-common/internal';
 
-export default function BlogPostItem(props) {
-  // Destructure frontMatter safely with a default empty object
-  const { frontMatter = {}, children } = props;
-  const { title = 'Untitled', image, description } = frontMatter;
-
+export default function BlogListPage() {
+  const {items: blogPosts} = useBlogPosts();
   return (
-    <article className={clsx('blog-post', styles.blogPost)}>
-      {/* Render cover image if it exists */}
-      {image && (
-        <img
-          src={image}
-          alt={title}
-          style={{
-            width: '100%',
-            maxHeight: '400px',
-            objectFit: 'cover',
-            marginBottom: '1rem',
-          }}
-        />
-      )}
-
-      {/* Render title */}
-      <h1>{title}</h1>
-
-      {/* Optional description */}
-      {description && <p>{description}</p>}
-
-      {/* Blog content */}
-      <div className="blog-post-content">{children}</div>
-    </article>
+    <div>
+      <h1>Recent Posts</h1>
+      <ul>
+        {blogPosts.map((post) => (
+          <li key={post.metadata.permalink}>
+            <BlogPostItem frontMatter={post.metadata} >
+              {/* Optionally render snippet */}
+            </BlogPostItem>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
