@@ -1,7 +1,7 @@
 ---
 title: Tutorial Intro
 ---
-# Tutorial Intro HOLA
+# Tutorial Intro HOLA test
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
