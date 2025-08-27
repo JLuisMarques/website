@@ -5,7 +5,7 @@ description: >+
   fast-paced digital world.
 
 authors:
-  - Luis Marques
+  - yangshun
 tags:
   - Technology
 image: /technology.jpg
