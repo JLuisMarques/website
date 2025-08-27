@@ -12,8 +12,8 @@ const config = {
   },
 
   // ✅ Use your real domain here (custom domain)
-  url: 'https://docs.luismarques.com',
-  baseUrl: '/', // ✅ root since you’re using a custom domain
+  url: 'https://jluismarques.github.io',
+  baseUrl: '/website/', // ✅ root since you’re using a custom domain
   trailingSlash: true, // ✅ avoids GH Pages redirect quirks
 
   // GitHub pages deployment config.
