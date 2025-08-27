@@ -4,7 +4,7 @@ description: >
   Exploring how simple solutions often create the biggest impact in our
   fast-paced digital world.
 authors:
-  - Luis Marques
+  - luismarques
 tags:
   - Technology
 image: /technology.jpg
