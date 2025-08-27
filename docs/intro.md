@@ -3,6 +3,8 @@ title: Tutorial Intro
 ---
 # Tutorial Intro HOLA test
 
+![](/6363fce6041ff658863732.avif)
+
 Let's discover **Docusaurus in less than 5 minutes**.
 
 ## Getting Started
