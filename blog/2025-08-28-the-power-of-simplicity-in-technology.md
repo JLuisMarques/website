@@ -7,7 +7,7 @@ authors:
   - luismarques
 tags:
   - Technology
-image: /technology.jpg
+image: /uploads/technology.jpg
 draft: false
 ---
 In today’s world, where complexity often dominates the conversation, simplicity remains a timeless principle that drives true innovation. From the design of user-friendly apps to the elegance of minimal code solutions, the beauty of technology often lies in making things easy, accessible, and intuitive.
