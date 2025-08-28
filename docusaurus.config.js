@@ -70,11 +70,11 @@ const config = {
           label: 'Tutorial',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
-        {
+        /** {
           href: 'https://github.com/JLuisMarques/website',
           label: 'GitHub',
           position: 'right',
-        },
+        },*/
       ],
     },
     footer: {
@@ -95,7 +95,7 @@ const config = {
           title: 'More',
           items: [
             { label: 'Blog', to: '/blog' },
-            /** { label: 'GitHub', href: 'https://github.com/JLuisMarques/website' },*/
+            { label: 'GitHub', href: 'https://github.com/JLuisMarques/website' },
           ],
         },
       ],
