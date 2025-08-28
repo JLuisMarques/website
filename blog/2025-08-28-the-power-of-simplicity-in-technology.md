@@ -1,5 +1,5 @@
 ---
-title: The Power of Simplicity in Technology
+title: The Power of Simplicity in Technology 2
 description: >
   Exploring how simple solutions often create the biggest impact in our
   fast-paced digital world.
